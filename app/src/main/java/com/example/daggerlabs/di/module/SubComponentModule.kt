@@ -1,4 +1,4 @@
-package com.example.daggerlabs.di
+package com.example.daggerlabs.di.module
 
 import com.example.daggerlabs.di.component.LoginComponent
 import dagger.Module
