@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DaggerLabs</string>
+    <string name="bake">bake</string>
+    <string name="eat">eat</string>
+    <string name="id">id</string>
+    <string name="login">login</string>
+    <string name="password">password</string>
+</resources>
