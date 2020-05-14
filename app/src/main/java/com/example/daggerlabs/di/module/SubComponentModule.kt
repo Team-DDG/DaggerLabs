@@ -1,7 +1,7 @@
 package com.example.daggerlabs.di.module
 
-import com.example.daggerlabs.di.component.LoginComponent
+import com.example.daggerlabs.users.di.UsersComponent
 import dagger.Module
 
-@Module(subcomponents = [LoginComponent::class])
+@Module(subcomponents = [UsersComponent::class])
 class SubComponentModule
