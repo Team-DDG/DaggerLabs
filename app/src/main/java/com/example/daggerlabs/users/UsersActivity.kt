@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
 import com.example.daggerlabs.BaseApp
 import com.example.daggerlabs.R
+import com.example.daggerlabs.di.ViewModelFactory
 import com.example.daggerlabs.users.di.UsersComponent
 import kotlinx.android.synthetic.main.activity_users.*
 import javax.inject.Inject
@@ -19,8 +20,7 @@ class UsersActivity : AppCompatActivity() {
     }
 
     @Inject
-    lateinit var viewModelFactory: UsersViewModelFactory
-
+    lateinit var viewModelFactory: ViewModelFactory<UsersViewModel>
     private val viewModel: UsersViewModel by lazy {
         ViewModelProvider(this, viewModelFactory)[UsersViewModel::class.java]
     }

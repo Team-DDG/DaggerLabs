@@ -5,12 +5,10 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.daggerlabs.data.UsersRepository
-import com.example.daggerlabs.users.di.UsersScope
 import com.example.daggerlabs.users.model.UserModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-@UsersScope
 class UsersViewModel @Inject constructor(
     private val usersRepository: UsersRepository
 ) : ViewModel() {
