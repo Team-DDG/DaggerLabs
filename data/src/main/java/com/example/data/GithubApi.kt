@@ -1,6 +1,6 @@
-package com.example.daggerlabs.data
+package com.example.data
 
-import com.example.daggerlabs.users.model.UserModel
+import com.example.model.UserModel
 import retrofit2.http.GET
 
 interface GithubApi {

@@ -1,4 +1,4 @@
-package com.example.daggerlabs.users.model
+package com.example.model
 
 import androidx.recyclerview.widget.DiffUtil
 import com.google.gson.annotations.SerializedName

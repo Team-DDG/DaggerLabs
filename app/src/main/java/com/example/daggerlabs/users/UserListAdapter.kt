@@ -6,9 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.daggerlabs.R
-import com.example.daggerlabs.users.model.UserModel
+import com.example.model.UserModel
 import kotlinx.android.synthetic.main.item_user.view.*
-
 
 class UserListAdapter :
     ListAdapter<UserModel, UserListAdapter.UserHolder>(UserModel.DIFF_CALLBACK) {

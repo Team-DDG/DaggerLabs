@@ -1,6 +1,6 @@
-package com.example.daggerlabs.di.module
+package com.example.data.di
 
-import com.example.daggerlabs.data.GithubApi
+import com.example.data.GithubApi
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
 @Module
-class NetworkModule {
+class DataModule {
 
     @Provides
     @Singleton
