@@ -1,10 +1,10 @@
-package com.example.daggerlabs.users
+package com.example.users
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.data.UsersRepository
+import com.example.model.repository.UsersRepository
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 

@@ -1,13 +1,10 @@
 package com.example.data
 
 import com.example.model.UserModel
+import com.example.model.repository.UsersRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
-
-interface UsersRepository {
-    suspend fun getUsers(): List<UserModel>
-}
 
 class UsersRepositoryImpl @Inject constructor(
     private val githubApi: GithubApi

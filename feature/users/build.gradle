@@ -8,15 +8,17 @@ apply plugin: 'kotlin-kapt'
 apply from: rootProject.file('gradle/android.gradle')
 
 dependencies {
-    implementation project(path: ':model')
     implementation project(path: ':core')
+    implementation project(path: ':data')
+    implementation project(path: ':model')
 
     implementation Deps.Kotlin.coroutine
 
-    implementation Deps.Retrofit.retrofit
+    implementation Deps.AndroidX.appCompat
+    implementation Deps.AndroidX.constraintLayout
+    implementation Deps.AndroidX.recyclerView
+
+    implementation Deps.AndroidX.Lifecycle.viewModelKtx
 
     kapt Deps.Dagger.compiler
-
-    implementation Deps.Retrofit.retrofit
-    implementation Deps.Retrofit.gson
 }

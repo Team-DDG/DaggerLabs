@@ -3,12 +3,15 @@ import dependencies.Deps
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 apply from: rootProject.file('gradle/android.gradle')
 
 dependencies {
-    implementation Deps.Kotlin.kotlin
+    api Deps.Kotlin.kotlin
 
-    implementation "androidx.recyclerview:recyclerview:1.1.0"
-    implementation "com.squareup.retrofit2:converter-gson:2.7.1"
+    api Deps.Dagger.dagger
+    kapt Deps.Dagger.compiler
+
+    implementation Deps.AndroidX.appCompat
 }

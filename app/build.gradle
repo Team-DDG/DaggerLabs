@@ -33,8 +33,10 @@ android {
 dependencies {
     implementation project(path: ':data')
     implementation project(path: ':model')
+    implementation project(path: ':core')
 
-    implementation Deps.Kotlin.kotlin
+    implementation project(path: ':feature:users')
+
     implementation Deps.Kotlin.coroutine
 
     implementation Deps.AndroidX.appCompat
@@ -44,7 +46,5 @@ dependencies {
     implementation Deps.AndroidX.Lifecycle.viewModelKtx
     implementation Deps.AndroidX.Lifecycle.runtimeKtx
 
-    implementation Deps.Dagger.dagger
     kapt Deps.Dagger.compiler
-
 }

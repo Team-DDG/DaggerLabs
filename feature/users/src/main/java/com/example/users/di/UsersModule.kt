@@ -1,7 +1,7 @@
-package com.example.daggerlabs.users.di
+package com.example.users.di
 
-import com.example.data.UsersRepository
 import com.example.data.UsersRepositoryImpl
+import com.example.model.repository.UsersRepository
 import dagger.Binds
 import dagger.Module
 

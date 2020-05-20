@@ -1,4 +1,4 @@
-package com.example.daggerlabs.di.module
+package com.example.base.di.module
 
 import android.app.Application
 import android.content.Context

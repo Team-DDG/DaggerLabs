@@ -1,4 +1,4 @@
-package com.example.daggerlabs.di
+package com.example.base.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
