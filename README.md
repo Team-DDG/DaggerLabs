@@ -12,5 +12,5 @@
 - [X] Constructor Injection
 - [X] @Binds를 사용한 추상화
 - [X] SubComponent를 사용한 그래프 확장
-- [ ] AAC ViewModel 주입
+- [X] AAC ViewModel 주입
 - [ ] Android Support 라이브러리 적용 (안드로이드 개발에 유용한 것이 많다고 함)
